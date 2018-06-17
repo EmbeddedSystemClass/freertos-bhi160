@@ -725,6 +725,7 @@ BHY_RETURN_FUNCTION_TYPE bhy_parse_next_fifo_packet (uint8_t **fifo_buffer, uint
     }
 
 
+
 #if defined(BHY_DEBUG)
     {
         uint8_t *p_name = "UnDefined";
@@ -776,10 +777,10 @@ BHY_RETURN_FUNCTION_TYPE bhy_parse_next_fifo_packet (uint8_t **fifo_buffer, uint
             }
         }
 
-        trace_log("[Sample](%12s):(%02d)", p_name, _fifoSizes[*fifo_data_type]);
-        for(i = 0; i < _fifoSizes[*fifo_data_type]; i++)
-            trace_log(" %02x", *((*fifo_buffer) + i));
-        trace_log("\n");
+//        trace_log("[Sample](%12s):(%02d)", p_name, _fifoSizes[*fifo_data_type]);
+//        for(i = 0; i < _fifoSizes[*fifo_data_type]; i++)
+//            trace_log(" %02x", *((*fifo_buffer) + i));
+//        trace_log("\n");
     }
 #endif
 
